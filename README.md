@@ -38,6 +38,8 @@ _The following instructions are for PHPStorm._
 11. Refresh the page in your browser
 12. Accept _Incoming Connection From Xdebug_
 
+See https://xdebug.org/docs/remote for how to enable xdebug sessions.
+
 ## Additional Notes
 
 For database connections, use `mysql` as the hostname. If you would like a different hostname, change the service name in the `docker-compose.yml` file.  
