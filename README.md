@@ -2,16 +2,18 @@
 
 This repository allows you to quickly get a development environment up and running using Docker, including a MySQL database and some debugging tools.
 
-This environment includes:
+This environment includes the latest versions of the following software:
 
 - `nginx:alpine`
-- `php:7.4.1-fpm`
+- `php:7.4-fpm`
 - `mysql:latest`
-- `xdebug-2.9.0`
+- `xdebug`
 
 ## Prerequisites
 
  - Docker (https://www.docker.com/products/docker-desktop)
+ - Tested on macOS 10.15 (Catalina) and Windows 10 Version 10.0.18362
+ - Windows 10 requires Docker File Sharing with C drive to be enabled
 
 ## Running the Container
 

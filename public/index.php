@@ -1,5 +1,3 @@
 <?php
 
-$string = 'Hello World!';
-
-echo $string;
+phpinfo();
