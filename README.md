@@ -13,7 +13,7 @@ This environment includes the latest versions of the following software:
 
  - Docker (https://www.docker.com/products/docker-desktop)
  - Tested on macOS 10.15 (Catalina) and Windows 10 Version 10.0.18362
- - Windows 10 requires Docker File Sharing with C drive to be enabled
+ - Windows 10 requires Docker File Sharing with the C drive to be enabled in the Docker settings, restart may be required after enabling sharing
 
 ## Running the Container
 
