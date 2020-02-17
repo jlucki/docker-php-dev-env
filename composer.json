@@ -1,0 +1,20 @@
+{
+  "name": "jlucki/docker-php-dev-env",
+  "description": "A simple web development environment using Docker with NGINX, PHP, MySQL and Xdebug.",
+  "type": "project",
+  "keywords": [
+    "docker",
+    "development",
+    "environment",
+    "php",
+    "xdebug",
+    "nginx"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Jan Lucki",
+      "email": "jan@lucki.dev"
+    }
+  ]
+}

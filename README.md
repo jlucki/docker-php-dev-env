@@ -17,9 +17,9 @@ This environment includes the latest versions of the following software:
 
 ## Running the Container
 
-1. Download the files from this repo and copy them to your project directory
-2. Run `docker-compose up` from the project directory
-3. Visit `localhost` in your browser
+1. Using composer: `composer create-project jlucki/docker-php-dev-env <project name>` or download the files from this repo and copy them to your project directory
+3. Run `docker-compose up` from the project directory
+4. Visit `localhost` in your browser
 
 ## Setting up Xdebug in Your IDE
 
@@ -42,4 +42,4 @@ See https://xdebug.org/docs/remote for how to enable xdebug sessions.
 
 ## Additional Notes
 
-For database connections, use `mysql` as the hostname. If you would like a different hostname, change the service name in the `docker-compose.yml` file.  
+For database connections, use `mysql` as the hostname. If you would like a different hostname, change the service name in the `docker-compose.yml` file.
