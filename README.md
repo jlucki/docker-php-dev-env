@@ -27,16 +27,21 @@ _The following instructions are for PHPStorm._
 
 1. Click on Run > Edit Configurations
 2. Click the `+` and add a new PHP Remote Debug configuration
-3. Tick _Filter debug connection by IDE key_
-4. Give the configuration a name
-5. Click the `...` next to Server
-6. Click the `+` to add a new server
-7. Give the server a name, and set the host to `127.0.0.1`
-8. Hit Apply and OK until you've returned to the IDE
-9. Click the _Start Listening for PHP Debug Connections_ icon
-10. Set a breakpoint in your code
-11. Refresh the page in your browser
-12. Accept _Incoming Connection From Xdebug_
+3. Give the configuration a name
+4. Tick _Filter debug connection by IDE key_
+5. Add `PHPSTORM` in the session id
+6. Click the `...` next to Server
+7. Click the `+` to add a new server
+8. Give the server a name, and set the host to `127.0.0.1`
+9. Tick _Use path mappings_
+10. Open the Project files drop down
+11. Find the public folder, and under Absolute path on the server add `/code/public`
+12. Hit Apply and OK until you've returned to the IDE
+13. Click the _Start Listening for PHP Debug Connections_ icon
+14. Set a breakpoint in your code
+15. Refresh the page in your browser
+16. Accept _Incoming Connection From Xdebug_
+17. Happy debugging!
 
 See https://xdebug.org/docs/remote for how to enable xdebug sessions.
 
