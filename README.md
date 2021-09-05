@@ -13,7 +13,14 @@ This environment includes the latest versions of the following software:
 
  - Docker (https://www.docker.com/products/docker-desktop)
  - Tested on macOS 10.15 (Catalina) and Windows 10 Version 10.0.18362
- - Windows 10 requires Docker File Sharing with the C drive to be enabled in the Docker settings, restart may be required after enabling sharing
+
+### Windows 10 Prerequisites
+
+- In Docker settings, file sharing must be enabled for the **C:\\** folder
+	- Located under the **Resources** section, then the **File Sharing** section as seen in [this image](https://i.imgur.com/maub2Wh.png).
+- If you do not see this option, make sure you are using **Windows containers**
+	- Right-click the Docker icon in the system tray and click **Switch to Windows containers** as seen in [this image](https://i.imgur.com/enYmIPH.png)
+- You will also need to *uncheck* **Use the WSL 2 based engine** in the **General** section in order to see the **File Sharing** section under **Resources** as seen in [this image](https://i.imgur.com/GxQtCZg.png)
 
 ## Running the Container
 
