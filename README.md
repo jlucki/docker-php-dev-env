@@ -21,7 +21,8 @@ This environment includes the latest versions of the following software:
 
 1. Using composer: `composer create-project jlucki/docker-php-dev-env <project name>` or download the files from this repo and copy them to your project directory
 3. Run `docker compose up` from the project directory
-4. Visit `localhost` in your browser
+	- Note: the above command will work on versions newer than 3.6. If you are using Docker 3.6 or older, consider upgrading to the latest version, or use `docker-compose up`.
+5. Visit `localhost` in your browser
 
 ## Setting up Xdebug in Your IDE
 
