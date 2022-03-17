@@ -6,7 +6,7 @@ This repository allows you to quickly get a development environment up and runni
 This environment includes the latest versions of the following software:
 
 - `nginx:alpine`
-- `php:8.0-fpm`
+- `php:8.1-fpm`
 - `mysql:latest`
 - `xdebug`
 
@@ -14,15 +14,20 @@ This environment includes the latest versions of the following software:
 
  - Docker - https://www.docker.com/products/docker-desktop
  - Tested and confirmed working on:
-	 - macOS 10.15 (Catalina)
+	 - macOS 12.3 (Monterey)
 	 - Windows 10 Version 21H1 build 19043.1165
+
+## Project Setup
+
+Run `composer create-project jlucki/docker-php-dev-env "project_name"`
+
+Alternatively, download the files from this repo and copy them to your project directory.
 
 ## Running the Container
 
-1. Using composer: `composer create-project jlucki/docker-php-dev-env <project name>` or download the files from this repo and copy them to your project directory
-3. Run `docker compose up` from the project directory
-	- Note: the above command will work on versions newer than 3.6. If you are using Docker 3.6 or older, consider upgrading to the latest version, or use `docker-compose up`.
-5. Visit `localhost` in your browser
+1. Run `docker compose up` from the project directory
+    - Note: the above command will only work on versions newer than 3.6. If you are using Docker 3.6 or older, use `docker-compose up`
+2. Visit `localhost` in your browser
 
 ## Setting up Xdebug in Your IDE
 
@@ -59,12 +64,16 @@ If you are having problems and can't seem to fix the issue, try one or both of t
 ### Solution 1
 Try switching to **Windows containers**:
 
-Right-click the Docker icon in the system tray and click **Switch to Windows containers** as seen in [this image](https://i.imgur.com/enYmIPH.png)
+Right-click the Docker icon in the system tray and click **Switch to Windows containers** as seen below:
+
+![Context Menu](https://i.imgur.com/enYmIPH.png)
 
 ### Solution 2
 If the **Use the WSL 2 based engine** setting is checked:
 
-Uncheck the setting, then enable file sharing located under the **Resources** section, then the **File Sharing** section as seen in [this image](https://i.imgur.com/maub2Wh.png).
+Uncheck the setting, then enable file sharing located under the **Resources** section, then the **File Sharing** section as seen below:
+
+![Docker Settings](https://i.imgur.com/maub2Wh.png)
 
 If the **Use the WSL 2 based engine** setting is unchecked:
 Enable/check the setting (file sharing is automatically configured)
