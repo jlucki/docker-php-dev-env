@@ -6,7 +6,7 @@ This repository allows you to quickly get a development environment up and runni
 This environment includes the latest versions of the following software:
 
 - `nginx:alpine`
-- `php:8.1-fpm`
+- `php:8.2-fpm`
 - `mysql:latest`
 - `xdebug`
 
