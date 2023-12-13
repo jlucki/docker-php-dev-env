@@ -40,16 +40,15 @@ _The following instructions are for PHPStorm._
 5. Add `PHPSTORM` in the session id
 6. Click the `...` next to Server
 7. Click the `+` to add a new server
-8. Give the server a name, and set the host to `127.0.0.1`
+8. Give the server a name, and set the host to `localhost`
 9. Tick _Use path mappings_
-10. Open the Project files drop down
-11. Find the public folder, and under Absolute path on the server add `/code/public`
-12. Hit Apply and OK until you've returned to the IDE
-13. Click the _Start Listening for PHP Debug Connections_ icon
-14. Set a breakpoint in your code
-15. Refresh the page in your browser
-16. Accept _Incoming Connection From Xdebug_
-17. Happy debugging!
+10. Under the `Project files` file/directory, next to your project folder, for the `Absolute path on the server` column add `/var/www/html`
+11. Hit Apply and OK until you've returned to the IDE
+12. Click the _Start Listening for PHP Debug Connections_ icon
+13. Set a breakpoint in your code
+14. Refresh the page in your browser
+15. Accept _Incoming Connection From Xdebug_
+16. Happy debugging!
 
 See https://xdebug.org/docs/remote for how to enable xdebug sessions.
 
