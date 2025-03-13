@@ -5,15 +5,15 @@ This repository allows you to quickly get a development environment up and runni
 This environment includes the latest versions of the following software:
 
 - `nginx:alpine`
-- `php:8.3-fpm`
+- `php:8.4-fpm`
 - `mysql:latest`
 - `xdebug`
 
 ## Prerequisites
 
- - Docker (https://www.docker.com/products/docker-desktop)
- - Tested on macOS 12.3 (Monterey) and Windows 10 Version 10.0.18362
- - Windows 10 requires Docker File Sharing with the C drive to be enabled in the Docker settings, restart may be required after enabling sharing
+- Docker (https://www.docker.com/products/docker-desktop)
+- Tested on macOS 14.6.1 (Sonoma) and Windows 10 Version 10.0.18362
+- Windows 10 requires Docker File Sharing with the C drive to be enabled in the Docker settings, restart may be required after enabling sharing
 
 ## Project Setup
 
@@ -23,8 +23,9 @@ Alternatively, download the files from this repo and copy them to your project d
 
 ## Running the Container
 
-1. Run `docker compose up` from the project directory
-    - Note: the above command will only work on versions newer than 3.6. If you are using Docker 3.6 or older, use `docker-compose up`
+1. Run `docker compose up -d` from the project directory
+   - The above command will only work on versions newer than 3.6. If you are using Docker 3.6 or older, use `docker-compose up -d`
+   - You can check running containers withg `docker ps`
 2. Visit `localhost` in your browser
 
 ## Setting up Xdebug in Your IDE
@@ -54,3 +55,6 @@ See https://xdebug.org/docs/remote for how to enable xdebug sessions.
 
 For database connections, use `mysql` as the hostname. If you would like a different hostname, change the service name in the `docker-compose.yml` file.
 
+## Windows 10 Troubleshooting
+
+For troubleshooting tips see the [wiki](https://github.com/jlucki/docker-php-dev-env/wiki/Windows-Troubleshooting/).
