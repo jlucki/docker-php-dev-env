@@ -58,23 +58,4 @@ For database connections, use `mysql` as the hostname. If you would like a diffe
 
 ## Windows 10 Troubleshooting
 
-If you are having problems and can't seem to fix the issue, try one or both of these fixes:
-
-### Solution 1
-
-Try switching to **Windows containers**:
-
-Right-click the Docker icon in the system tray and click **Switch to Windows containers** as seen below:
-
-![Context Menu](https://i.imgur.com/enYmIPH.png)
-
-### Solution 2
-
-If the **Use the WSL 2 based engine** setting is checked:
-
-Uncheck the setting, then enable file sharing located under the **Resources** section, then the **File Sharing** section as seen below:
-
-![Docker Settings](https://i.imgur.com/maub2Wh.png)
-
-If the **Use the WSL 2 based engine** setting is unchecked:
-Enable/check the setting (file sharing is automatically configured)
+For troubleshooting tips see the [wiki](https://github.com/jlucki/docker-php-dev-env/wiki/Windows-Troubleshooting/).
