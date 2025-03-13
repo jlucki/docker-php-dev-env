@@ -1,4 +1,3 @@
-
 # Docker PHP Development Environment
 
 This repository allows you to quickly get a development environment up and running using Docker, including a MySQL database and some debugging tools.
@@ -6,16 +5,16 @@ This repository allows you to quickly get a development environment up and runni
 This environment includes the latest versions of the following software:
 
 - `nginx:alpine`
-- `php:8.3-fpm`
+- `php:8.4-fpm`
 - `mysql:latest`
 - `xdebug`
 
 ## Prerequisites
 
- - Docker - https://www.docker.com/products/docker-desktop
- - Tested and confirmed working on:
-	 - macOS 12.3 (Monterey)
-	 - Windows 10 Version 21H1 build 19043.1165
+- Docker - https://www.docker.com/products/docker-desktop
+- Tested and confirmed working on:
+  - macOS 14.6.1 (Sonoma)
+  - Windows 10 Version 21H1 build 19043.1165
 
 ## Project Setup
 
@@ -25,8 +24,9 @@ Alternatively, download the files from this repo and copy them to your project d
 
 ## Running the Container
 
-1. Run `docker compose up` from the project directory
-    - Note: the above command will only work on versions newer than 3.6. If you are using Docker 3.6 or older, use `docker-compose up`
+1. Run `docker compose up -d` from the project directory
+   - The above command will only work on versions newer than 3.6. If you are using Docker 3.6 or older, use `docker-compose up -d`
+   - You can check running containers withg `docker ps`
 2. Visit `localhost` in your browser
 
 ## Setting up Xdebug in Your IDE
@@ -58,21 +58,4 @@ For database connections, use `mysql` as the hostname. If you would like a diffe
 
 ## Windows 10 Troubleshooting
 
-If you are having problems and can't seem to fix the issue, try one or both of these fixes:
-
-### Solution 1
-Try switching to **Windows containers**:
-
-Right-click the Docker icon in the system tray and click **Switch to Windows containers** as seen below:
-
-![Context Menu](https://i.imgur.com/enYmIPH.png)
-
-### Solution 2
-If the **Use the WSL 2 based engine** setting is checked:
-
-Uncheck the setting, then enable file sharing located under the **Resources** section, then the **File Sharing** section as seen below:
-
-![Docker Settings](https://i.imgur.com/maub2Wh.png)
-
-If the **Use the WSL 2 based engine** setting is unchecked:
-Enable/check the setting (file sharing is automatically configured)
+For troubleshooting tips see the [wiki](https://github.com/jlucki/docker-php-dev-env/wiki/Windows-Troubleshooting/).
