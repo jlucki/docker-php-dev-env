@@ -3,6 +3,8 @@ FROM php:8.5-fpm
 ARG WITH_XDEBUG=true
 
 RUN apt update && apt install -y \
+        git \
+        zip \
         libfreetype6-dev \
         libjpeg62-turbo-dev \
         libpng-dev \
