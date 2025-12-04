@@ -5,14 +5,14 @@ This repository allows you to quickly get a development environment up and runni
 This environment includes the latest versions of the following software:
 
 - `nginx:alpine`
-- `php:8.4-fpm`
+- `php:8.5-fpm`
 - `mysql:latest`
 - `xdebug`
 
 ## Prerequisites
 
 - Docker (https://www.docker.com/products/docker-desktop)
-- Tested on macOS 14.6.1 (Sonoma) and Windows 10 Version 10.0.18362
+- Tested on macOS 15.7.1 (Sequoia) and Windows 10 Version 10.0.18362
 - Windows 10 requires Docker File Sharing with the C drive to be enabled in the Docker settings, restart may be required after enabling sharing
 
 ## Project Setup
