@@ -5,7 +5,7 @@ This repository allows you to quickly get a development environment up and runni
 This environment includes the latest versions of the following software:
 
 - `nginx:alpine`
-- `php:8.4-fpm`
+- `php:8.5-fpm`
 - `mysql:latest`
 - `xdebug`
 
@@ -13,7 +13,7 @@ This environment includes the latest versions of the following software:
 
 - Docker - https://www.docker.com/products/docker-desktop
 - Tested and confirmed working on:
-  - macOS 14.6.1 (Sonoma)
+  - macOS 15.7.1 (Sequoia)
   - Windows 10 Version 21H1 build 19043.1165
 
 ## Project Setup
